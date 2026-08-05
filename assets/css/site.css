@@ -60,8 +60,9 @@ button,input,select,textarea{font:inherit}
   border-bottom:1px solid var(--line-soft);
 }
 .nav-inner{height:88px;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-.brand{display:flex;align-items:center;min-width:255px;height:72px;overflow:visible}
-.brand img{width:auto;height:66px;max-width:310px;object-fit:contain;object-position:left center}
+.brand{display:flex;align-items:center;min-width:300px;height:72px;overflow:visible}
+.brand-logo-panel{display:flex;align-items:center;background:#fff;border-radius:12px;padding:7px 14px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.brand img{display:block;width:auto;height:50px;max-width:285px;object-fit:contain}
 .main-nav{display:flex;align-items:center;gap:1.7rem}
 .main-nav>a:not(.btn){color:var(--muted);font-size:.92rem;font-weight:650;letter-spacing:.005em;transition:.22s}
 .main-nav>a:not(.btn):hover,.main-nav>a.active{color:#fff}
@@ -169,8 +170,10 @@ textarea{min-height:145px}
 footer{margin-top:5rem;background:#03070e;border-top:1px solid var(--line-soft);padding:4rem 0 1.2rem}
 .footer-grid{display:grid;grid-template-columns:1.55fr .85fr .85fr 1.15fr;gap:2.2rem;align-items:start}
 .footer-brand{min-width:0}
-.footer-logo-wrap{height:115px;display:flex;align-items:center;overflow:visible;margin-bottom:.6rem}
-.footer-logo{height:104px;width:auto;max-width:440px;object-fit:contain;object-position:left center}
+.footer-logo-wrap{min-height:104px;display:flex;align-items:center;overflow:visible;margin-bottom:.55rem}
+.footer-logo-panel{display:inline-flex;align-items:center;background:#fff;border-radius:14px;padding:10px 14px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.footer-logo{display:block;height:72px;width:auto;max-width:390px;object-fit:contain}
+.brand-tagline{margin:.35rem 0 1rem;color:#f1f5f9;font-size:.92rem;line-height:1.45;letter-spacing:.01em;max-width:390px}
 .footer-links{list-style:none;margin:0;padding:0;display:grid;gap:.38rem}
 footer h3{font-size:1rem;margin-top:.2rem}
 footer p,footer li,footer a{color:var(--muted);font-size:.85rem}
@@ -194,16 +197,19 @@ footer a:hover{color:#fff}
   .container{width:min(var(--max),calc(100% - 32px))}
   .utility-right{display:none}
   .utility .container{justify-content:center}
-  .brand{min-width:0;height:64px}
-  .brand img{height:54px;max-width:245px}
+  .brand{display:flex;align-items:center;min-width:300px;height:72px;overflow:visible}
+.brand-logo-panel{display:flex;align-items:center;background:#fff;border-radius:12px;padding:7px 14px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.brand img{display:block;width:auto;height:50px;max-width:285px;object-fit:contain}
   .nav-inner{height:78px}
   .main-nav{top:78px}
   h1{font-size:3rem}
   .grid-3,.trust-grid,.footer-grid,.form-grid,.results{grid-template-columns:1fr}
   .hero{padding:4.4rem 0 3rem}
   .section{padding:4.5rem 0}
-  .footer-logo-wrap{height:98px}
-  .footer-logo{height:88px;max-width:330px}
+  .footer-logo-wrap{min-height:104px;display:flex;align-items:center;overflow:visible;margin-bottom:.55rem}
+.footer-logo-panel{display:inline-flex;align-items:center;background:#fff;border-radius:14px;padding:10px 14px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
+.footer-logo{display:block;height:72px;width:auto;max-width:390px;object-fit:contain}
+.brand-tagline{margin:.35rem 0 1rem;color:#f1f5f9;font-size:.92rem;line-height:1.45;letter-spacing:.01em;max-width:390px}
   .footer-bottom{flex-direction:column}
   .whatsapp span{display:none}
 }
