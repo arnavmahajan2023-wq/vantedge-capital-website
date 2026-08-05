@@ -1,24 +1,12 @@
-# VANTEDGE Website v5.0 — Executive Edition
+# VANTEDGE Website v6.0 — Final Executive Foundation
 
-Premium static website built for GitHub Pages.
-
-## Update using GitHub Desktop
+GitHub Pages deployment:
 1. Extract this package.
-2. Open the cloned `vantedge-capital-website` repository with **Show in Explorer**.
-3. Copy every file and folder from this package into the repository folder.
-4. Choose **Replace files in the destination**.
-5. Return to GitHub Desktop.
-6. Commit summary: `Deploy VANTEDGE Website v5.0 Executive Edition`
-7. Click **Commit to main**.
-8. Click **Push origin**.
-9. Wait 1–3 minutes for GitHub Pages.
-10. Hard-refresh the website with Ctrl + Shift + R.
+2. Open the cloned GitHub repository folder.
+3. Copy all package files into the repository folder.
+4. Replace existing files.
+5. Commit: `Deploy VANTEDGE Website v6.0 Final Foundation`
+6. Push origin.
+7. Wait 1–3 minutes and hard-refresh.
 
-## Business settings
-Edit `assets/js/settings.js` to add:
-- ARN
-- EUIN
-- office address
-- office hours
-
-The ARN line remains hidden until a real ARN is entered.
+Edit `assets/js/settings.js` to add ARN, EUIN, address and office hours.
