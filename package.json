@@ -1,12 +1,12 @@
 {
-  "name": "vantedge-capital-website",
+  "name": "vantedge-capital-production",
   "private": true,
-  "version": "6.1.0",
+  "version": "6.2.0",
   "scripts": {
-    "dev": "wrangler pages dev .",
-    "deploy": "wrangler pages deploy . --project-name=vantedge-capital"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "wrangler": "^4.36.0"
+    "wrangler": "^4.68.0"
   }
 }
