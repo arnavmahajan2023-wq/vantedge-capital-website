@@ -1,23 +1,24 @@
-# VANTEDGE Website v4.0
+# VANTEDGE Website v5.0 — Executive Edition
 
-Production-ready static website for GitHub + Cloudflare Pages.
+Premium static website built for GitHub Pages.
 
-## Upload with GitHub Desktop
-1. Open your cloned repository folder using **Show in Explorer**.
-2. Delete the incomplete old website files inside that repository.
-3. Copy **all contents of this v4.0 folder** into the cloned repository folder.
-4. Return to GitHub Desktop.
-5. Summary: `Deploy VANTEDGE Website v4.0`
-6. Click **Commit to main**.
-7. Click **Push origin**.
-
-## Cloudflare Pages
-- Framework preset: None
-- Build command: leave blank
-- Build output directory: `/`
-- Root directory: `/`
-- Production branch: `main`
+## Update using GitHub Desktop
+1. Extract this package.
+2. Open the cloned `vantedge-capital-website` repository with **Show in Explorer**.
+3. Copy every file and folder from this package into the repository folder.
+4. Choose **Replace files in the destination**.
+5. Return to GitHub Desktop.
+6. Commit summary: `Deploy VANTEDGE Website v5.0 Executive Edition`
+7. Click **Commit to main**.
+8. Click **Push origin**.
+9. Wait 1–3 minutes for GitHub Pages.
+10. Hard-refresh the website with Ctrl + Shift + R.
 
 ## Business settings
-Edit `assets/js/settings.js` to add real ARN, EUIN, address and business hours.
-The AMFI/ARN message stays hidden until an ARN is entered.
+Edit `assets/js/settings.js` to add:
+- ARN
+- EUIN
+- office address
+- office hours
+
+The ARN line remains hidden until a real ARN is entered.
