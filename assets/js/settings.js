@@ -10,5 +10,6 @@ officeAddress:"",
 officeHours:"By prior appointment",
 arn:"",
 euin:"",
-formRecipient:"contact@vantedgecapital.in"
+formRecipient:"contact@vantedgecapital.in",
+turnstileSiteKey:"PASTE_YOUR_TURNSTILE_SITE_KEY_HERE"
 };

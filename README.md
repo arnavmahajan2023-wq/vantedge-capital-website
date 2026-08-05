@@ -1,12 +1,11 @@
-# VANTEDGE Website v6.0 — Final Executive Foundation
+# VANTEDGE Website v6.1.1 — Cloudflare Production
 
-GitHub Pages deployment:
-1. Extract this package.
-2. Open the cloned GitHub repository folder.
-3. Copy all package files into the repository folder.
-4. Replace existing files.
-5. Commit: `Deploy VANTEDGE Website v6.0 Final Foundation`
-6. Push origin.
-7. Wait 1–3 minutes and hard-refresh.
+Corrected production architecture:
+- Cloudflare Pages
+- Pages Function `/api/contact`
+- Turnstile
+- Cloudflare Email Service REST API
+- AJAX enquiry form
+- optional CRM webhook
 
-Edit `assets/js/settings.js` to add ARN, EUIN, address and office hours.
+Read `docs/CLOUDFLARE_V6.1_SETUP.md`.
