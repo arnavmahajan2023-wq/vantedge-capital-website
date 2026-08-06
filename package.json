@@ -1,7 +1,7 @@
 {
   "name": "vantedge-capital-production",
   "private": true,
-  "version": "7.0.0",
+  "version": "8.0.0",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy"
@@ -9,5 +9,5 @@
   "devDependencies": {
     "wrangler": "^4.68.0"
   },
-  "description": "VANTEDGE CAPITAL enterprise production website for Cloudflare Workers"
+  "description": "VANTEDGE CAPITAL final production website using Cloudflare Workers, Turnstile and Resend"
 }

@@ -1,52 +1,29 @@
-# VANTEDGE Website v7.0 — Enterprise Edition
+# VANTEDGE Website v8.0 — Enterprise Final Production
 
-## Production architecture
+Free architecture:
+- Cloudflare Workers Free
+- Cloudflare Turnstile Free
+- Resend Free
+- Zoho Mail receiving
 
-- GitHub: source repository
-- Cloudflare Workers: website + backend API
-- Cloudflare Static Assets: serves files from `public/`
-- Cloudflare Turnstile: spam protection
-- Cloudflare Email Service API: sends enquiries
-- Zoho Mail: receives enquiries at `contact@vantedgecapital.in`
+Deployment:
+- Project: vantedge-capital-production
+- Branch: main
+- Build command: blank
+- Deploy command: npx wrangler deploy
 
-## Cloudflare deployment settings
+Public Turnstile Site Key is already configured.
 
-Use the current **Create a Worker** Git deployment flow.
+Required encrypted Cloudflare Worker secrets:
+- TURNSTILE_SECRET
+- RESEND_API_KEY
 
-- Project name: `vantedge-capital-production`
-- Build command: leave blank
-- Deploy command: `npx wrangler deploy`
-- Production branch: `main`
+Verify this sending subdomain in Resend:
+send.vantedgecapital.in
 
-## Already configured
+The Worker sends:
+From: VANTEDGE Website <website@send.vantedgecapital.in>
+To: contact@vantedgecapital.in
+Reply-To: visitor email
 
-The public Turnstile Site Key is already present in:
-
-`public/assets/js/settings.js`
-
-## Required Cloudflare Worker secrets
-
-Add these only in Cloudflare:
-
-- `TURNSTILE_SECRET`
-- `CF_ACCOUNT_ID`
-- `CF_EMAIL_API_TOKEN`
-
-Optional future integration:
-
-- `CRM_WEBHOOK_URL`
-
-## Safe deployment
-
-1. Extract this package.
-2. Replace the files in the cloned GitHub repository.
-3. Commit:
-   `Deploy VANTEDGE v7.0 Enterprise Edition`
-4. Push origin.
-5. Wait for Cloudflare deployment success.
-6. Hard-refresh the live site with Ctrl + Shift + R.
-7. Test the contact form.
-
-## Important security note
-
-Never commit the Turnstile Secret Key or Cloudflare API token to GitHub.
+Do not store secrets in GitHub.
