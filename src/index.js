@@ -23,8 +23,13 @@ async function sendEmail(env,payload){
 }
 
 async function contact(request,env,ctx){
+  const requestUrl=new URL(request.url);
+  const origin=request.headers.get("Origin")||"";
+  if(origin && new URL(origin).hostname!==requestUrl.hostname){
+    return json({success:false,message:"Invalid request origin."},403);
+  }
   for(const key of ["TURNSTILE_SECRET","CF_ACCOUNT_ID","CF_EMAIL_API_TOKEN"]){
-    if(!env[key]) return json({success:false,message:"The secure enquiry service is not fully configured yet."},503);
+    if(!env[key]) return json({success:false,message:"The enquiry service is temporarily unavailable while secure email settings are being completed. Please use WhatsApp or call us."},503);
   }
   let input;
   try{input=await request.json()}catch{return json({success:false,message:"Invalid form request."},400)}

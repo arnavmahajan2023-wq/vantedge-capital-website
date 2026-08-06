@@ -1,12 +1,13 @@
 {
   "name": "vantedge-capital-production",
   "private": true,
-  "version": "6.2.0",
+  "version": "7.0.0",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.68.0"
-  }
+  },
+  "description": "VANTEDGE CAPITAL enterprise production website for Cloudflare Workers"
 }
